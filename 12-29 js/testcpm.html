@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1> Use of push , pop , shift </h1>
+  <p id="test1"></p>
+  <p id="test2"></p>
+  <p id="test3"></p>
+  <p id="test4"></p>
+  <p id="test5"></p>
+  <p id="test6"></p>
+  <p id="test7"></p>
+  <p id="test8"></p>
+  <p id="test9"></p>
+  <script>
+    const bike = ["Honda", "BMW", "suzuki"];
+    document.getElementById("test1").innerHTML = bike;
+    bike.push("TVS", "pulsar");
+    document.getElementById("test2").innerHTML = bike;
+    bike.pop();
+    document.getElementById("test3").innerHTML = bike;
+    bike.shift();
+    document.getElementById("test4").innerHTML = bike;
+    bike.unshift("yatri");
+    document.getElementById("test5").innerHTML = bike;
+    bike[3] = "deo";
+    document.getElementById("test6").innerHTML = bike;
+    document.getElementById("test7").innerHTML = bike.pop();
+    delete bike[2];
+    document.getElementById("test8").innerHTML = bike;
+  </script>
+</body>
+
+</html>

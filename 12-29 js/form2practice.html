@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript form validation - checking non-empty</title>
+  <link rel='stylesheet' href='form-style.css' type='text/css' />
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <!-- Create an HTML form.
+  Once done, add validation using JS.
+  Do not use any library. Write validation code yourself. Only when the form is validated should the Submit button be enabled. Else, it should remain disabled.
+  The fields on the form should be:
+  1.Name
+  2.Email (Validate email address)
+  3.Phone (should be 10 numbers only)
+  4.Website (Validate URL)
+       Submit -->
+  <div class="form-style-8">
+    <h2>HTML Form Which validates all the input field</h2>
+    <form name="myform">
+      <input type="text" name="field1" id="field1" placeholder="Full Name" oninput=" validateForm()" />
+      <input type="email" name="field2" id="field2" placeholder="Email" oninput=" validateForm() " />
+      <input type="number" name="field3" id="field3" placeholder="98xxxxxxxx" oninput=" validateForm()" />
+      <input type="url" name="field4" id="field4" placeholder="Website" oninput=" validateForm() " />
+
+      <button type="submit" value="submit" id="sbt-btn">Submit</button>
+    </form>
+  </div>
+  <script src="form.js"></script>
+</body>
+
+</html>

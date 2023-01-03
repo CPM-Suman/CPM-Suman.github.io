@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script>
+    const form = document.getElementById('Form');
+    form.addEventListener("change", () => {
+      document.getElementById('submitBtn').disabled = !form.checkValidity()
+    });
+  </script>
+</head>
+
+<body>
+  <h2>JavaScript Validation</h2>
+  <form id="Form" name="myform" action="formcpm.php" onsubmit="return validateForm()" method="post">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+    <label for="email">Email:</label><br>
+    <input type="text" id="email" name="email"><br>
+    <label for="phone">Phone:</label><br>
+    <input type="number" min="9999999999" id="n1">
+    </br>
+    <label for="website">Website:</label><br>
+    <input type="text" id="website" name="website"><br><br>
+    <input type="submit" id="submit" value="Submit">
+  </form>
+</body>
+
+</html>
