@@ -1,0 +1,15 @@
+#tbl1{
+  margin: 8%;
+  margin-left: 10%;
+  box-shadow: 0px 0px 15px rgb(0, 0, 0);
+}
+#tbl2 {
+  margin: 8%;
+  margin-left: 10%;
+  text-align: center;
+  box-shadow: 0px 0px 15px rgb(3, 19, 243);
+}
+#letter{
+  margin: 8%;
+  margin-left: 10%;
+}
